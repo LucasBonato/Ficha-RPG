@@ -21,29 +21,30 @@
         <section class="main_container">
             <div class="header">
                 <div class="top_header">
-                    <img src="" alt="">
                     <div class="pontos">
-                        <p>
-                            Pontos de vida <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirpv()">-</button> 20/20 <button onclick="aumentarpv()">+</button> <br>
-                            Pontos de Sanidade <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirsan()">-</button> 20/20 <button onclick="aumentarsan()">+</button> <br>
-                            Pontos de Esforço <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirpe()">-</button> 20/20 <button onclick="aumentarpe()">+</button>
-                        </p>
+                        <div class="progress">
+                            <img src="./src/assets/miniatura-roberson.png" alt="Avatar imagem" class="avatar_img">
+                            <p>Pontos de vida <br><progress value="100" max="100" class="progress_bar pv">20/20</progress> <br> <button onclick="diminuirpv()">-</button> 20/20 <button onclick="aumentarpv()">+</button> <br></p>
+                            <p>Pontos de Sanidade <br><progress value="100" max="100" class="progress_bar san">20/20</progress> <br> <button onclick="diminuirsan()">-</button> 20/20 <button onclick="aumentarsan()">+</button> <br></p>
+                            <p>Pontos de Esforço <br><progress value="100" max="100" class="progress_bar pe">20/20</progress> <br> <button onclick="diminuirpe()">-</button> 20/20 <button onclick="aumentarpe()">+</button></p>
+                        </div>
                         <div>
+                            <br>
                             <input type="radio" name="sobreV" id="inc"> <label for="inc">inconsciente</label>
                             <input type="radio" name="sobreS" id="trauma"> <label for="trauma">Traumatizado</label> <br>
                             <input type="radio" name="sobreV" id="ferimentoG"> <label for="ferimentoG">Ferimento Grave</label>
                             <input type="radio" name="sobreS" id="enloque"> <label for="enloque">Ferimento Grave</label>
                         </div>
                     </div>
-                    <div>
-                        <h2>RESISTÊNCIAS</h2>
-                         <p>Física: <input type="text"> </p>
-                         <p>Balística: <input type="text"> </p>
-                         <p>Sangue: <input type="text"> </p>
-                         <p>Conhecimento: <input type="text"> </p>
-                         <p>Energia: <input type="text"> </p>
-                         <p>Morte: <input type="text"> </p>
-                    </div>
+                    <h2>RESISTÊNCIAS</h2>
+                        <div class="resistencias">
+                            <p class="solid">Física: <input type="number"> </p>
+                            <p class="solid">Balística: <input type="number"> </p>
+                            <p class="solid">Sangue: <input type="number"> </p>
+                            <p class="solid">Conhecimento: <input type="number"> </p>
+                            <p class="solid">Energia: <input type="number"> </p>
+                            <p class="solid">Morte: <input type="number"> </p>
+                        </div>
                 </div>
             </div>
             <hr>

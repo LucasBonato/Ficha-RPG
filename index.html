@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/CSS/style.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="#perso_info">informações</a>
+            <a href="#armas">Armas</a>
+            <a href="#peri">Perícias</a>
+            <a href="#inv">Inventário</a>
+            <a href="#hab">Habilidades</a>
+            <a href="#ritu">Rituais</a>
+        </div>
+        <h1>Ficha RPG</h1>
+            <hr>
+        <section class="main_container">
+            <div class="header">
+                <div class="top_header">
+                    <img src="" alt="">
+                    <div class="pontos">
+                        <p>
+                            Pontos de vida <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirpv()">-</button> 20/20 <button onclick="aumentarpv()">+</button> <br>
+                            Pontos de Sanidade <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirsan()">-</button> 20/20 <button onclick="aumentarsan()">+</button> <br>
+                            Pontos de Esforço <br><progress value="100" max="100">20/20</progress> <br> <button onclick="diminuirpe()">-</button> 20/20 <button onclick="aumentarpe()">+</button>
+                        </p>
+                        <div>
+                            <input type="radio" name="sobreV" id="inc"> <label for="inc">inconsciente</label>
+                            <input type="radio" name="sobreS" id="trauma"> <label for="trauma">Traumatizado</label> <br>
+                            <input type="radio" name="sobreV" id="ferimentoG"> <label for="ferimentoG">Ferimento Grave</label>
+                            <input type="radio" name="sobreS" id="enloque"> <label for="enloque">Ferimento Grave</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>RESISTÊNCIAS</h2>
+                         <p>Física: <input type="text"> </p>
+                         <p>Balística: <input type="text"> </p>
+                         <p>Sangue: <input type="text"> </p>
+                         <p>Conhecimento: <input type="text"> </p>
+                         <p>Energia: <input type="text"> </p>
+                         <p>Morte: <input type="text"> </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="perso_info" id="perso_info">
+                <h2>INFORMAÇÕES DO PERSONAGEM</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>PLayer: <input type="text"></p>
+                                <p>Nome: <input type="text"></p>
+                                <p>Idade: <input type="text"></p>
+                                <p>Ocupação: <input type="text"></p>
+                                <p>Classe: <input type="text"></p>
+                                <p>NEX: <input type="text"></p>
+                            </td>
+                            <td>
+                                <img src="./src/assets/Atributos.png" alt="Imagem de ritual com propriedades" class="propriedades">
+                            </td>
+                        </tr>
+                    </table>
+                    <!--
+                    <div>
+                        <p>PLayer: <input type="text"></p>
+                        <p>Nome: <input type="text"></p>
+                        <p>Idade: <input type="text"></p>
+                        <p>Ocupação: <input type="text"></p>
+                        <p>Classe: <input type="text"></p>
+                        <p>NEX: <input type="text"></p>
+                        <img src="./src/assets/Atributos.png" alt="">
+                    </div>
+                    -->
+                    <div>
+                        <input type="text"> <br> <p>Dano Bônus</p>
+                        <input type="text"> <br> <p>Corpo</p>
+                        <input type="text"> <br> <p>Taxa de Movimento</p>
+                        <div>
+                            <p>DEFESAS</p>
+                            <p>Passivas: <input type="text"></p>
+                            <p>Bloqueio: <input type="text"></p>
+                            <p>Esquiva: <input type="text"></p>
+                        </div>
+                    </div>
+            </div>
+            <hr>
+            <div class="armas" id="armas">
+                <h2>ARMAS</h2>
+                    <p><button>+</button> Nome      Tipo    Dano        Alcance Ataques Mun.A Mun.M <br> <hr></p>
+                    <span><button><img src="" alt=""></button> <p>Desarmado</p> <p>Comum</p> <p>1D3+DB</p> <button><img src="" alt=""></button> <p>Toque</p> <p>1</p> <p>-</p> <p>-</p></span>
+            </div>
+            <hr>
+            <div class="pericias" id="peri">
+                <h2>PERÍCIAS</h2>
+                    <table>
+                        <tr>
+                            <td> <p contenteditable="true">0</p> <br> Atletismo <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Atualidades <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Ciência <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Diplomacia <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Enganação <br> <button><img src="" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td> <p contenteditable="true">0</p> <br> Fortitude <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Furtividade <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Intimidação <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Intuição <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Investigação <br> <button><img src="" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td> <p contenteditable="true">0</p> <br> Luta <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Medicina <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Ocultismo <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Percepção <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Pilotagem <br> <button><img src="" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td> <p contenteditable="true">0</p> <br> Pontaria <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Prestidigitação <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Profissão <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Reflexos <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Religião <br> <button><img src="" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td> <p contenteditable="true">0</p> <br> Tática <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Tecnologia <br> <button><img src="" alt=""></button></td>
+                            <td> <p contenteditable="true">0</p> <br> Vontade <br> <button><img src="" alt=""></button></td>
+                        </tr>
+                    </table>
+            </div>
+            <hr>
+            <div class="inventerio" id="inv">
+                <h2>ARMAS</h2>
+                    <p><button>+</button> Nome          Descrição       Peso Quant.</p>
+                    <hr>
+                    <span><button><img src="" alt=""></button> <p contenteditable="true">Katana</p> <p contenteditable="true">Uma espada Japonesa</p> <p contenteditable="true">0.5</p> <p contenteditable="true">1</p></span>
+            </div>
+            <hr>
+            <div class="habilidades" id="hab">
+                <h2>HABILIDADES</h2>
+                    <button>+</button>
+                    <div class="hability_box">
+                        <h3>{Nome da hanilidade}</h3>
+                            <p>
+                                {
+                                    Desc. habilidades
+                                }
+                            </p>
+                    </div>
+            </div>
+            <hr>
+            <div class="rituais" id="ritu">
+                <h2>RITUAIS</h2>
+                    <button>+</button>
+                    <div class="ritu">
+                        <p class="tipos">Sangue</p>
+                        <h3>Amaldiçoar Arma</h3>
+                            <p>
+                                <strong>Execução:</strong> Movimento
+                                <strong>Alcance:</strong> Toque
+                                <strong>Alvo:</strong> 1 arma que cause dano físico
+                                <strong>Duração:</strong> Cena
+                            </p>
+                            <h4><strong>Descrição:</strong></h4>
+                                <p>
+                                    Você toca uma arma que cause dano físico para amaldiçoá-la com o elemento do ritual. Até final da cena, ela causa +1D6 de dano do elemento escolhido.
+                                </p>
+                    </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<!--contenteditable="true" é para tornar um elemento html editavel-->
